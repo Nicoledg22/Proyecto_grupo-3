@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FINNK</title>
+        <link rel="icon" href="img/logo finnk.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+          <header>
+        <div class="contenedor">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a th:href="@{/}" class="logo">FINNK</a>
+                <ul class="nav-list">
+                    <li class="nav-item">                     
+                       <a th:href="@{/}" class="nav-link active ">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/finnk/Ropa}" class="nav-link  ">Ropa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/finnk/Bolsos}" class="nav-link ">Bolsos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/finnk/joyeria}" class="nav-link ">Joyeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/finnk/New arrivals}" class="nav-link ">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/finnk/informacion}" class="nav-link ">Informacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/finnk/blogs}" class="nav-link ">Blogs</a>
+                    </li>               
+                  
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="hero" id="hero">
+        <div class="contenedor">
+            <h2 class="h2-sub">
+                <span class="fil">B</span>ienvenido
+            </h2>
+           
+            <div class="he-des">
+                <h5>FINNK STORE</h5>
+                <a href="#" class="btn cta-btn">Explora</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="dis-sto">
+        <div class="contenedor">
+            <div class="res-info">
+                <div class="imagen-encab">
+                    <img class="gif-1"src="/img/1142651.gif" alt="">     
+                              
+                </div>
+            
+                <div class="res-des pad-rig">
+                    <div class="global">
+                        <h2 class="h2-sub">
+                            <span class="fil">D</span>escubre
+                        </h2>
+                        <h1 class="head hea-dark">La Historia</h1>
+                        <div class="circle">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Doloremque veniam autem qui magnam ex tempora atque, voluptas
+                         voluptatem, recusandae porro corporis assumenda. 
+                        Aliquam accusamus blanditiis illo, vero quia tempora praesentium.
+                    </p>
+                    <a href="#" class="btn cta-btn">Nosotros</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="taste bt">
+        <div class="contenedor">
+            <div class="global">
+                <h2 class="h2-sub">
+                    <span class="fil">B</span>olsos
+                </h2>
+                <h1 class="head">Lorem</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="disco">
+        <div class="contenedor">
+            <div class="res-info">
+                <div class="res-des">
+                    <div class="global">
+                        <h2 class="h2-sub">
+                            <span class="fil">D</span>escubre
+                        </h2>
+                        <h1 class="head hea-dark">catalogo</h1>
+                        <div class="circle">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Doloremque veniam autem qui magnam ex tempora atqu  </p>
+                    <a href="#" class="btn cta-btn">ingresa</a>
+                </div>
+                <div class="image-group pad-rig">
+                    <img class="b1"src="img/bolso3.gif" alt="">
+                    <img class="b1"src="img/Bindex.jpg" alt="">   
+                    
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="pb bt">
+        <div class="contenedor">
+            <div class="global">
+                <h2 class="h2-sub">
+                    <span class="fil">R</span>opa
+                </h2>
+                <h1 class="head">New Drops</h1>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="contenedor">       
+            <div class="res-info">
+                <div class="image-group1">
+                    <div class="caj1">
+                    <div class="caj" style="background-image: url(img/sh2.jpg)"></div>
+                    <div class="conte">
+                        <div class="card-category">overside</div>
+                        <h3 class="card-heading">boneless Hoddie</h3>
+                    </div>   
+                    </div>
+                    <div class="caj1">
+                        <div class="caj" style="background-image: url(img/sh3.jpg)"></div>
+                        <div class="conte">
+                            <div class="card-category">overside</div>
+                            <h3 class="card-heading">boneless Hoddie</h3>
+                        </div>   
+                   </div>
+                   <div class="caj1">
+                    <div class="caj" style="background-image: url(img/sh1.jpg)"></div>
+                    <div class="conte">
+                        <div class="card-category">overside</div>
+                        <h3 class="card-heading">boneless Hoddie</h3>
+                    </div>   
+               </div>
+               <div class="caj1">
+                <div class="caj" style="background-image: url(img/b22.jpg)"></div>
+                <div class="conte">
+                    <div class="card-category">overside</div>
+                    <h3 class="card-heading">boneless Hoddie</h3>
+                </div>   
+           </div>
+                   
+                        
+    
+                </div>
+                <div class="res-des pad-rig">
+                    <div class="global">                       
+                        <h2 class="h2-sub">
+                            <span class="fil">D</span>egusta
+                        </h2>
+                        <h1 class="head hea-dark">catalogo</h1>
+                        <div class="circle">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Doloremque veniam autem qui magnam ex tempora atque, voluptas
+                         voluptatem, recusandae porro corporis assumenda. 
+                        Aliquam accusamus blanditiis illo, vero quia tempora praesentium.
+                    </p>
+                    <a th:href="@{/finnk/Ropa}" class="btn cta-btn">ingresa</a>
+                </div>
+        
+             </div>
+             
+       </div>      
+   
+   
+    </section>
+        <section class="sectJ bt">
+        <div class="contenedor">
+            <div class="global">
+                <h2 class="h2-sub">
+                    <span class="fil">J</span>ewler´s
+                </h2>
+                <h1 class="head">ESSENCIALS</h1>
+            </div>
+        </div>
+    </section>
+        
+  <section class="dis-sto">
+        <div class="contenedor">
+            <div class="res-info">
+                <div class="slider-frame">
+                    <ul>
+                        <li><img src="img/anillo1.jpg" alt="500"/></li>
+                        <li><img src="img/anillo2.jpg" alt="500"/></li>
+                        <li><img src="img/anillo2.jpg" alt="500"/></li>
+                        <li><img src="img/anillo3.gif" alt="500"/></li>
+                    </ul>
+                </div>
+            
+                <div class="res-des pad-rig">
+                    <div class="global">
+                        <h2 class="h2-sub">
+                            <span class="fil">D</span>escubre
+                        </h2>
+                        <h1 class="head hea-dark">La Historia</h1>
+                        <div class="circle">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Doloremque veniam autem qui magnam ex tempora atque, voluptas
+                         voluptatem, recusandae porro corporis assumenda. 
+                        Aliquam accusamus blanditiis illo, vero quia tempora praesentium.
+                    </p>
+                    <a href="#" class="btn cta-btn">ingresa</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contenedor">
+            <div class="footer-content">
+
+                <div class="footer-content-about">
+                    <h4>Nosotros</h4>
+                    <div class="circle">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Praesentium odio labore dolorum veritatis, culpa cumque eum 
+                        reprehenderit iure, commodi, repellat eaque possimus obcaecati 
+                        assumenda exercitationem? 
+                        Aperiam provident accusantium laboriosam. Necessitatibus!</p>
+                </div>
+                <div class="footer-div">
+                    <div class="social-media">
+                        <h4>Follow</h4>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Contactenos</h4>
+                        <div class="btnWhat">
+                         <img class="codbarras"src=" img/wa.link_hf7fg6.png">
+                    </div>
+                    </div>
+            </div>
+         
+
+        </div>
+        
+    </footer>
+
+    <!--Codigo para que funciona el menu iterativo -->
+    <script>
+
+        const selectElement = function(element) {
+            return document.querySelector(element);
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function(){
+            body.classList.toggle('open');
+        })
+
+    </script>
+    </body>
+    
+ 
+</html>

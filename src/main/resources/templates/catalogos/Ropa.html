@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FINNK</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link href="/css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" href="img/logo finnk.jpg">
+    </head>
+    <body>
+
+       <header>
+        <div class="contenedor">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a th:href="@{/}" class="logo">FINNK</a>
+                <ul class="nav-list">
+                    <li class="nav-item">                     
+                       <a th:href="@{/}" class="nav-link  ">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/finnk/Ropa}" class="nav-link active ">Ropa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/finnk/Bolsos}" class="nav-link ">Bolsos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/finnk/joyeria}" class="nav-link ">Joyeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/finnk/New arrivals}" class="nav-link ">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/finnk/informacion}" class="nav-link ">Informacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/finnk/blogs}" class="nav-link ">Blogs</a>
+                    </li>               
+                  
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+        <section class="heroo" id="heroo">
+            <div class="contenedor">
+                <h2 class="h2-sub">
+                    <span class="fil">R</span>opa
+                </h2> 
+                <div class="he-des">
+                    <h5>New arrivals</h5>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="contenedor1">              
+                        <div class="galeria">
+                            <div class="imagenes">
+                                <img src="/img/19.jpg" alt=""/>
+                            </div>
+                            <div class="pie-imagen">
+                                <h3>Jeans claro holgado Roto </h3>
+                                <h3>Precio</h3>
+                            </div>
+                        </div>
+                        <div class="galeria">
+                            <div class="imagenes">
+                                <img src="/img/21.jpg" alt=""/>
+                            </div>
+                            <div class="pie-imagen">
+                                <h3>Pantalon Cuerina negro</h3>
+                                <h3>Precio</h3>
+                            </div>
+                        </div>
+                        <div class="galeria">
+                            <div class="imagenes">
+                                <img src="/img/24.jpg" alt=""/>
+                            </div>
+                            <div class="pie-imagen">
+                                <h3>Buzos LA</h3>
+                                <h3>Precio</h3>
+                            </div>
+                        </div>
+                        <div class="galeria">
+                            <div class="imagenes">
+                                <img src="/img/b20.jpg" alt=""/>
+                            </div>
+                            <div class="pie-imagen">
+                                <h3>Jeans Claro Talle alto</h3>
+                                <h3>Precio</h3>
+                            </div>
+                        </div>
+                        <div class="galeria">
+                            <div class="imagenes">
+                                <img src="/img/b22.jpg" alt=""/>
+                            </div>
+                            <div class="pie-imagen">
+                                <h3>Blusa Tay Day</h3>
+                                <h3>Precio</h3>
+                            </div>
+                        </div>
+                        <div class="galeria">
+                            <div class="imagenes">
+                                <img src="/img/2.jpg" alt=""/>
+                            </div>
+                            <div class="pie-imagen">
+                                <h3>Blusa Corset Blanca</h3>
+                                <h3>Precio</h3>
+                            </div>
+                        </div>
+                        <div class="galeria">
+                            <div class="imagenes">
+                                <img src="/img/b25.jpg" alt=""/>
+                            </div>
+                            <div class="pie-imagen">
+                                <h3>Blusa Floreada primavera</h3>
+                                <h3>Precio</h3>
+                            </div>
+                        </div> 
+                        <div class="galeria">
+                            <div class="imagenes">
+                                <img src="/img/b26.jpg" alt=""/>
+                            </div>
+                            <div class="pie-imagen">
+                                <h3>Blusa Holgada playera</h3>
+                                <h3>Precio</h3>
+                            </div>
+                        </div>
+        </section>
+   
+    
+    
+    <footer class="pie">
+        <div class="footer-cont">
+             Tienda FINNK&COPY;
+        </div>
+        
+</footer>
+
+    <script>
+
+        const selectElement = function(element) {
+            return document.querySelector(element);
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function(){
+            body.classList.toggle('open');
+        })
+
+    </script>
+    </body>
+</html>

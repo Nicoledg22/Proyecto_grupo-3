@@ -1,0 +1,230 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 15 mar 2023, 17:21:12
+    Author     : 2003a
+*/
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    color: #000;
+    scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    padding: 3.9rem 0;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.6rem;
+    text-align: left;
+
+}
+
+.contenedor{
+
+    
+    width: 100%;
+    max-width: 122.5rem;
+    margin:  0 auto;
+    padding: 0 2.5rem;
+ 
+ 
+}
+header {
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,.8);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.5), transparent);
+}
+
+.rrrr {
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.menu-TG {
+    color: #fff;
+    font-size: 2.2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1.5rem;
+    cursor:pointer;
+    z-index: 1500;
+
+}
+.kawsss:hover{
+    color: lightpink;
+}
+
+.fa-tiempo{
+    display:none;
+}
+
+
+/**cuadro del menu**/
+.www {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 100vh;
+    background-color:rgba(0, 0, 0, .9);
+    padding: 4.4rem;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-around;
+    z-index: 1250;
+    transform: translateX(-100%);
+    text-decoration: none;
+    padding: 10px 0;
+   
+}
+/**recuadro gris de la par del menu el fondo**/
+.rrrr::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 1000;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .5s;
+
+}
+.open .fa-times {
+    display: block;
+}
+.open .fa-bars {
+    display:none;
+}
+
+
+/*Simbolo menu de movil*/
+
+/*Recuadro del menu pequeño*/
+.open .www {
+    transform: translateX(0);
+}
+
+.open .rrrr::before{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.logo {
+    color:lightpink;
+    font-size: 3rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.logo:hover{
+    color: #fff;
+}
+/**linea de las opciones del menu**/
+.opciones-TG {
+    border-bottom:2px solid rgba(255, 255, 255, .3);
+}
+
+.ruta-TG {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    margin-right: -2px;
+    text-decoration: none;
+}
+
+.ruta-TG:hover {
+    color:lightpink;
+}
+
+@media screen and (min-width: 1000px) {
+  
+    section {
+        padding: 7.9rem;
+    }
+
+    .kawsss {
+        display: none;
+    }
+
+    .rrrr {
+        justify-content: space-between;
+    }
+
+    .www {
+        position:initial;
+        width: initial;
+        height: initial;
+        background-color:transparent;
+        padding: 0;
+        justify-content:initial;
+        flex-direction:row;
+        transform: initial;
+        transition: initial;
+    }
+
+    .opciones-TG {
+        margin: 0 2.4rem;
+    }
+
+    .opciones-TG:last-child {
+        margin-right: 0;
+    }
+
+    .ruta-TG {
+        font-size: 1.3rem;
+    }
+
+    .linea {
+        position: relative;
+    }
+    .linea::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        left: 0;
+        bottom: -3px;
+    }
+}

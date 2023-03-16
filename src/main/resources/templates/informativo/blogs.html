@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>FINNK</title>
+        <link rel="icon" href="img/logo finnk.jpg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link href="/css/estilos.css" rel="stylesheet" type="text/css"/>   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    
+    
+        
+    </head>
+    <body>
+         <header>
+        <div class="contenedor">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a th:href="@{/}" class="logo">FINNK</a>
+                <ul class="nav-list">
+                    <li class="nav-item">                     
+                       <a th:href="@{/}" class="nav-link ">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/finnk/Ropa}" class="nav-link text-white  ">Ropa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/finnk/Bolsos}" class="nav-link ">Bolsos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/finnk/joyeria}" class="nav-link ">Joyeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/finnk/New arrivals}" class="nav-link ">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/finnk/informacion}" class="nav-link ">Informacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/finnk/blogs}" class="nav-link active ">Blogs</a>
+                    </li>               
+                  
+                </ul>
+            </nav>
+        </div>
+    </header>
+         <section>
+             <div class="contenedor1">    
+             </div>
+         </section>
+        <section class="contenedor">
+         <div class="row row-cols-1 row-cols-md-4 g-4 p-5 px-4">
+             <div class="col p-5 px-4">
+                 <div class="card h-100  border border-light">
+                    <img src="/img/blog5.jpg" class="card-img-top"  alt=""/>
+                     <div class="card-body">
+                         <h5 class="card-title">Joyas con perlas</h5>
+                         <p class="card-text">El resurgir de las perlas, es una realidad. Ya se llevaban las perlas en 2022 pero durante el otoño-invierno 2023 estas seguirán reinando en todos los looks. En joyería, ropa e incluso en bolsos.</p>
+                     </div>
+                     <div class="card-footer">
+                         <small class="text-muted">Last updated 3 mins ago</small>
+                     </div>
+                 </div>
+             </div>
+             <div class="col p-5 px-4">
+                 <div class="card h-100 border border-light">                     
+                        <img src="/img/blog4.jpg" class="card-img-top"  alt=""/>
+                     <div class="card-body">
+                         <h5 class="card-title">FUCSIA, EL COLOR EN TENDENCIA!!</h5>
+                         <p class="card-text">Colores en Tendencia! Iniciamos el 2022 usando muchos colores fuertes y combinaciones de estos..</p>
+                     </div>
+                     <div class="card-footer">
+                         <small class="text-muted">Dec 15,2022 | News</small>
+                     </div>
+                 </div>
+             </div>
+             <div class="col px-4 p-5 margin-auto">
+                 <div class="card h-100 border border-light">
+                      <img src="/img/blog3.jpg" class="card-img-top"  alt=""/>
+                     <div class="card-body">
+                         <h5 class="card-title">PLATAFORMAS!!! NEW IN</h5>
+                         <p class="card-text">PLATAFORMAS para este 2023! La tendencia para este 2023 en calzado está muy definido por el uso</p>
+                     </div>
+                     <div class="card-footer">
+                         <small class="text-muted">Last updated 3 mins ago</small>
+                     </div>
+                 </div>
+             </div>
+              <div class="col px-4 p-5 margin-auto">
+                 <div class="card h-100 border border-light">
+                      <img src="/img/blog2.jpg" class="card-img-top"  alt=""/>
+                     <div class="card-body">
+                         <h5 class="card-title">CUERO NEGRO!!</h5>
+                         <p class="card-text">El cuero será tendencia todo el 2023, podes llevarlo en pantalones, vestidos o tops negros…</p>
+                     </div>
+                     <div class="card-footer">
+                         <small class="text-muted">Feb 15,2023 | News</small>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </section>
+
+        <section class="taste-2 bt">
+            <div class="contenedor">
+                <div class="global">
+                    <h2 class="h2-sub">
+                        <span class="fil">N</span>oticias
+                    </h2>
+                    <h1 class="head"></h1>
+                </div>
+            </div>
+        </section>
+        
+        
+       <div class="contenedor">
+                    <div class="global">                                            
+                        <h3 class="blog-titulo tmBlog">Karol G se preparó para el desfile de Loewe en Paris Fashion Week 2023 |Vogue México y Latinoamérica</h3>                     
+                    </div>
+              <div class="res-info">
+                    <p class="texto-blog">
+                      Karol G se prepara para la pasarela de Loewe en París. 
+                      La cantante colombiana que tiene fascinado al mundo entero con su nuevo sencillo “TGQ”, 
+                      ha elegido un makeup look natural que se convierte en el aliado perfecto de un peinado sencillo, 
+                      pero glamouroso. Con un vestido de transparencias de la casa de moda española y digno de una bichota,
+                      Karol G está lista para este maxievento, pero no sin antes confesar su pasión por los postres parisinos
+                    </p>
+                    
+                </div>
+           <div class="caja-video">
+           <iframe class="video1"  src="https://www.youtube.com/embed/LiqouIokxU4" 
+                            title="Karol G se preparó para el desfile de Loewe en Paris Fashion Week 2023 |Vogue México y Latinoamérica"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+           </div>
+       </div>
+        
+          <section class="sec-blog bt">
+            <div class="contenedor2">
+               
+                    <div class="desliz-fotos">
+                        <div class="desliz-lado">
+                            <div class="desliz"><img src="/img/b20.jpg" alt=""/>                         
+                            </div>
+                            <div class="desliz"><img src="/img/b22.jpg" alt=""/>                         
+                            </div>
+                            <div class="desliz"><img src="/img/b23.jpg" alt=""/>                         
+                            </div>
+                            <div class="desliz"><img src="/img/b25.jpg" alt=""/>                         
+                            </div>
+                            <div class="desliz"><img src="/img/b26.jpg" alt=""/>                         
+                            </div>
+                            <div class="desliz"><img src="/img/b20.jpg" alt=""/>                         
+                            </div>   
+                        </div>
+                             
+                    </div>
+            </div>
+        </section>
+    
+        <div class="contenedor">
+            <div class="global">                                            
+                <h3 class="blog-titulo tmBlog">Karol G se preparó para el desfile de Loewe en Paris Fashion Week 2023 |Vogue México y Latinoamérica</h3>                     
+            </div>
+            <div class="res-info">
+                <p class="texto-blog">
+                    Cortes singulares atraviesan vestidos y blusas, mientras que una serie de cortes de precisión se unen como detalles de patrones gráficos. 
+                    El cuero resistente se convierte en flecos en chaquetas de motociclista, pantalones de cuero y faldas. 
+                    Las chaquetas se usan sobre vestidos y faldas de gasa en cascada con florituras de macramé, 
+                    creando un choque de formas estructuradas y fluidas, compostura e impulsividad. 
+                    Los vestidos ceñidos que realzan la silueta tienen un acabado de punto metalizado brillante. 
+                    Los abrigos y minifaldas desgreñados que parecen pieles están confeccionados con gasa y 
+                    encaje recortados de producción reciclada con un enfoque responsable con el medio ambiente. 
+                    Las tachuelas de metal son completas,
+                    cubren pantalones y chaquetas de cuero y atraviesan delicados encajes en un juego con contraste de materiales.
+                    Los estampados tienen un brillo inquietante en los colores de la colección de púrpura orquídea oscuro y rosa tropical.
+                    El estampado de múltiples logotipos 'Versace on Repeat' y los patrones florales y de cebra interactúan y 
+                    se incorporan en acabados de encaje laminado, fil coupé, intarsia o tachuelas de metal.
+
+                    Los bolsos de la línea La Medusa, incluida La Medusa Repeat, 
+                    la reedición del estilo de bolso hobo presentado para Resort 2023, 
+                    adoptan los acabados de tachuelas, flecos de cuero y material de espejo de la colección,
+                    mientras que la elegancia clásica del bolso Greca Goddess se hace absolutamente contemporáneo en nuevos colores verdes y 
+                    morados brillantes.
+
+                    La nueva línea de zapatos Medusa Anthem combina los estilos cursis de sandalias, 
+                    botas y Mary Jane con una suela de goma XL de metal pesado hecha para el club-kid de Versace.
+
+                </p>
+
+            </div>
+            <div class="caja-video">
+           <iframe class="video1" src="https://www.youtube.com/embed/hoKDrFyQDy0" 
+                   title="Versace Spring-Summer 2023 Women’s | Fashion Show | Versace" 
+                   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                   allowfullscreen></iframe>
+            </div>
+        </div>
+            
+    <footer class="pie">
+        <div class="footer-cont">
+             Tienda FINNK&COPY;
+        </div>
+        
+</footer>
+ <script>
+
+        const selectElement = function(element) {
+            return document.querySelector(element);
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function(){
+            body.classList.toggle('open');
+        })
+
+    </script>
+    </body>
+</html>
